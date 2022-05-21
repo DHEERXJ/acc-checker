@@ -36,6 +36,7 @@ def Editmessage(chat_id, text, msg_id, reply_markup=None):
         logger.info(e)
 def sendfile(chat_id, file_id):
     try:
-        bot.send_document(chat_id=chat_id, document = 'geek.txt')
+        #bot.send_document(chat_id=chat_id, document = 'geek.txt')
+        bot.send_document(chat_id=chat_id, document = open('geek.txt', 'rb'), filename="geek.txt")
     except Exception as e:
         logger.info(e)
