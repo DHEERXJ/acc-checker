@@ -9,7 +9,7 @@ from Checks.zee5 import zee_helper
 #from Checks.sun import Sun_helper
 from Miscellaneous.Scraper import pastebin, text_scraper, throwbin, ghostbin
 import os
-
+from telegram import Bot
 
 bot_token = os.environ.get('TG_BOT_TOKEN')
 startmessage = [[
