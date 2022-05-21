@@ -1,9 +1,16 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ( CommandHandler, Filters, MessageHandler, Updater)
-from message import Editmessage, Sendmessage, logger , chataction
+from message import Editmessage, Sendmessage, logger , chataction, sendfile
 from Checks.Altbalaji import altbalaji_helper
 from Checks.hoichoi import hoichoi_helper
-from Checks.voot import Voot_helper
+from Checks.voot impacc-checker
+/
+Bot
+/
+bot.py
+in
+main
+ort Voot_helper
 from Checks.aha import aha_helper
 from Checks.zee5 import zee_helper
 #from Checks.sun import Sun_helper
@@ -96,6 +103,20 @@ def duty(update, context):
                 text = f.read()
                 Sendmessage(chat_id,text)
                 f.close()
+            except:
+                print("error")
+    elif text[0] == '!add':
+            try:
+                with open('geek.txt', 'a') as f
+                f.write(str(text[1]))
+                text="done"
+                Sendmessage(chat_id,text)
+                f.close()
+            except:
+                print("error")
+    elif text[0] == '!save':
+            try:
+                sendfile(chat_id,'geek.txt')
             except:
                 print("error")
     else:
