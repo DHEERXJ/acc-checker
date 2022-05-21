@@ -3,14 +3,7 @@ from telegram.ext import ( CommandHandler, Filters, MessageHandler, Updater)
 from message import Editmessage, Sendmessage, logger , chataction, sendfile
 from Checks.Altbalaji import altbalaji_helper
 from Checks.hoichoi import hoichoi_helper
-from Checks.voot impacc-checker
-/
-Bot
-/
-bot.py
-in
-main
-ort Voot_helper
+from Checks.voot import Voot_helper
 from Checks.aha import aha_helper
 from Checks.zee5 import zee_helper
 #from Checks.sun import Sun_helper
