@@ -81,11 +81,12 @@ def duty(update, context):
             aha_helper(chat_id, text[1])
     elif text[0] == '!zee5':
         action = "typing"
-        chataction(chat_id ,action)
+        
         if '\n' in text[1]:
             simple = combos_spilt(text[1])
             for i in simple:
                 zee_helper(chat_id, i)
+                chataction(chat_id ,action)
             Sendmessage(chat_id, 'Ｃｏｍｐｌｅｔｅｄ')
         else:
             zee_helper(chat_id, text[1])
