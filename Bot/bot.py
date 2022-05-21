@@ -97,7 +97,7 @@ def duty(update, context):
                 Sendmessage(chat_id,text)
                 f.close()
             except:
-		print("error")
+                print("error")
     else:
         logger.info('Unknown Command')
 
