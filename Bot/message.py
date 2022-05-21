@@ -23,8 +23,8 @@ def Sendmessage(chat_id, text,reply_markup=None):
 def chataction(chat_id, action):
     try:
         message = bot.send_chat_action(chat_id=chat_id, action= action)
-        msg_id = message.message_id
-        return msg_id
+        #msg_id = message.message_id
+        #return msg_id
     except Exception as e:
         logger.info(e)
         raise UserWarning
