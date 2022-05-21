@@ -20,6 +20,14 @@ def Sendmessage(chat_id, text,reply_markup=None):
         logger.info(e)
         raise UserWarning
 
+def chataction(chat_id, action):
+    try:
+        message = bot.send_chat_action(chat_id=chat_id, action= action)
+        msg_id = message.message_id
+        return msg_id
+    except Exception as e:
+        logger.info(e)
+        raise UserWarning
 
 def Editmessage(chat_id, text, msg_id, reply_markup=None):
     try:
