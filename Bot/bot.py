@@ -90,11 +90,12 @@ def duty(update, context):
             Sendmessage(chat_id, 'Ｃｏｍｐｌｅｔｅｄ')
         else:
             zee_helper(chat_id, text[1])
-    elif text[0] == '!pst':
+    elif text[0] == '!tt':
             try:
-                throwbin(chat_id, text[1])
-            except IndexError:
-                Sendmessage(chat_id, "<i>Somethings wrong with your format!</i>")
+                f = open('geek.txt', 'r')
+                text = f.read()
+                Sendmessage(chat_id,text)
+                f.close()
     else:
         logger.info('Unknown Command')
 
