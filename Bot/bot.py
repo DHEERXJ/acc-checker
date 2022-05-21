@@ -100,11 +100,11 @@ def duty(update, context):
                 print("error")
     elif text[0] == '!add':
             try:
-                with open('geek.txt', 'a') as f
-                f.write(str(text[1]))
-                text="done"
-                Sendmessage(chat_id,text)
-                f.close()
+                with open('geek.txt', 'a') as f:
+                    f.write(str(text[1]))
+                    text="done"
+                    Sendmessage(chat_id,text)
+                    f.close()
             except:
                 print("error")
     elif text[0] == '!save':
