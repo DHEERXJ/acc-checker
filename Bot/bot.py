@@ -109,7 +109,8 @@ def duty(update, context):
                 print("error")
     elif text[0] == '!save':
             try:
-                sendfile(chat_id,'geek.txt')
+                file_id = "geek.txt"
+                sendfile(chat_id, file_id)
             except:
                 print("error")
     else:
