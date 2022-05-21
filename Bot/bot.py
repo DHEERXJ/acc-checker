@@ -80,7 +80,8 @@ def duty(update, context):
         else:
             aha_helper(chat_id, text[1])
     elif text[0] == '!zee5':
-        deleteMessage(chat_id,update.message.message_id)
+        action = "typing"
+        chataction(chat_id ,action)
         if '\n' in text[1]:
             simple = combos_spilt(text[1])
             for i in simple:
